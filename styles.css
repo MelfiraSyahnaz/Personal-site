@@ -1,0 +1,46 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Barlow', sans-serif;
+    @apply bg-zinc-900 text-zinc-50 ;
+  }
+
+  h1 {
+    @apply text-3xl font-bold text-zinc-50;
+  }
+  h2 {
+    @apply text-2xl font-bold text-zinc-50;
+  }
+  h3 {
+    @apply text-2xl  font-bold  text-zinc-50;
+  }
+  h4 {
+    @apply text-xl font-medium  text-zinc-400;
+  }
+  p {
+    @apply text-lg font-medium  text-zinc-400;
+  }
+  button {
+    @apply border-2 bg-transparent hover:bg-white  text-zinc-300 px-4 py-2 rounded-xl transition duration-300;
+  }
+}
+
+@layer components {
+  .primary {
+    @apply bg-purple-600 hover:bg-pink-400 text-white font-medium;
+  }
+  
+  .card {
+    @apply bg-zinc-400 p-8 rounded-xl  border-zinc-800 min-w-[220px] min-h-[260px] text-black;
+  }
+  .cont {
+    @apply  p-8 rounded-xl  h-full w-full text-black bg-gradient-to-r from-indigo-500/40 via-primary/60 to-indigo-500/40;
+  }
+  .placeholder {
+    @apply p-2 rounded-full border-2 border-white/30 bg-white/10 text-white/40
+  }
+}
